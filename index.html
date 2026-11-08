@@ -1,0 +1,45 @@
+<!doctype html>
+<html lang="pt-BR">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Xadrez Brasil Shorts Uploader</title>
+<meta name="description" content="Ferramenta interna do canal Xadrez Brasil para publicar e agendar os próprios Shorts no YouTube.">
+<style>
+  :root { --bg:#0d0b2e; --bg2:#2a0c6b; --ink:#f4f2ff; --muted:#bdb6e6; --gold:#ffc300; }
+  * { box-sizing:border-box; }
+  body { margin:0; min-height:100vh; font:17px/1.6 system-ui,-apple-system,"Segoe UI",sans-serif; color:var(--ink);
+         background:linear-gradient(160deg,var(--bg),var(--bg2)); display:flex; align-items:center; justify-content:center; padding:24px 16px; }
+  main { max-width:640px; width:100%; }
+  h1 { font-size:clamp(28px,6vw,40px); line-height:1.15; margin:0 0 12px; }
+  h1 span { color:var(--gold); }
+  p { margin:0 0 14px; color:var(--muted); }
+  ul { color:var(--muted); padding-left:20px; margin:0 0 18px; }
+  a { color:var(--gold); }
+  .links { display:flex; flex-wrap:wrap; gap:12px; margin-top:22px; }
+  .links a { text-decoration:none; padding:10px 16px; border:1px solid rgba(255,195,0,.5); border-radius:10px; }
+  footer { margin-top:32px; font-size:14px; color:var(--muted); }
+</style>
+</head>
+<body>
+<main>
+  <h1>Xadrez Brasil <span>Shorts Uploader</span></h1>
+  <p>Ferramenta interna do canal <strong>Xadrez Brasil</strong> no YouTube. Ela roda no computador do dono do canal e
+     publica os Shorts que o próprio canal produz a partir das suas transmissões e análises de partidas.</p>
+  <p>O que ela faz, usando a YouTube Data API:</p>
+  <ul>
+    <li>envia cada Short ao canal como vídeo privado, com publicação agendada;</li>
+    <li>define o título, a descrição, as tags e a capa (thumbnail) do vídeo;</li>
+    <li>confere qual canal foi autorizado e acompanha o processamento do envio.</li>
+  </ul>
+  <p>Não é um serviço aberto ao público: só o dono do canal a utiliza, com a própria conta.</p>
+  <div class="links">
+    <a href="privacidade.html">Política de privacidade</a>
+    <a href="https://www.youtube.com/channel/UC5K-TQsItHnNLjqYf8A3CTw">Canal Xadrez Brasil</a>
+  </div>
+  <footer>Este aplicativo usa os Serviços de API do YouTube.
+    <a href="https://www.youtube.com/t/terms">Termos de Serviço do YouTube</a> ·
+    <a href="https://policies.google.com/privacy">Política de Privacidade do Google</a></footer>
+</main>
+</body>
+</html>
