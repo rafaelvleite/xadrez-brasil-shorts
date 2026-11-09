@@ -23,21 +23,24 @@
 <body>
 <main>
   <h1>Política de Privacidade — Xadrez Brasil Shorts Uploader</h1>
-  <p class="date">Última atualização: 7 de novembro de 2026</p>
+  <p class="date">Última atualização: 8 de novembro de 2026</p>
 
   <p>O <strong>Xadrez Brasil Shorts Uploader</strong> é uma ferramenta interna do canal Xadrez Brasil no YouTube.
      Ela roda localmente no computador do dono do canal e serve apenas para publicar, no próprio canal, os Shorts que
      ele mesmo produz. Não é oferecida a outras pessoas.</p>
 
   <h2>Dados acessados</h2>
-  <p>Com a autorização do dono do canal (login do Google), a ferramenta usa os Serviços de API do YouTube com duas
+  <p>Com a autorização do dono do canal (login do Google), a ferramenta usa os Serviços de API do YouTube com três
      permissões:</p>
   <ul>
     <li><strong>youtube.upload</strong> — enviar vídeos ao canal e definir a capa (thumbnail);</li>
     <li><strong>youtube.readonly</strong> — confirmar qual canal foi autorizado, descobrir a categoria usual dos
-        vídeos e acompanhar o processamento dos envios.</li>
+        vídeos e acompanhar o processamento dos envios;</li>
+    <li><strong>youtube.force-ssl</strong> — corrigir o título, a descrição e as tags de um Short que a própria
+        ferramenta já enviou, quando o dono do canal pede.</li>
   </ul>
-  <p>Ela não lê comentários, inscritos, mensagens, dados de pagamento nem dados de outras pessoas.</p>
+  <p>Ela não lê comentários, inscritos, mensagens, dados de pagamento nem dados de outras pessoas, e não apaga
+     vídeos.</p>
 
   <h2>Como os dados são usados e guardados</h2>
   <ul>
@@ -67,8 +70,9 @@
   <hr>
   <p lang="en"><strong>English summary.</strong> Xadrez Brasil Shorts Uploader is an internal tool used only by the
      owner of the Xadrez Brasil YouTube channel to upload and schedule the channel's own Shorts. It uses the YouTube
-     API Services with the youtube.upload and youtube.readonly scopes to upload videos, set thumbnails, confirm the
-     authorized channel and check processing status. Tokens and data stay on the owner's computer; nothing is sold,
+     API Services with the youtube.upload, youtube.readonly and youtube.force-ssl scopes to upload videos, set
+     thumbnails, confirm the authorized channel, check processing status and correct the title, description and tags
+     of Shorts it has uploaded. It never deletes videos or reads comments. Tokens and data stay on the owner's computer; nothing is sold,
      shared or used for advertising. Use of information received from Google APIs adheres to the Google API Services
      User Data Policy, including the Limited Use requirements. Revoke access at
      <a href="https://myaccount.google.com/permissions">myaccount.google.com/permissions</a>. By using this app you
